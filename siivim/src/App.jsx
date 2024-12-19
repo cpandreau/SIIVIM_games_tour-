@@ -9,25 +9,16 @@ function App() {
   return (
     <>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <header style={{ backgroundColor: 'darkblue', padding: '10px', height: '10vh', width: '100%', position: 'fixed', top: 0, left: 0 }}>
+          <button>Accueil</button>
+          <button>Infos</button>
+          <button>Inscription</button>
+          <button>Equipe</button>
+          <button>Classement</button>
+        </header>
+        <div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
