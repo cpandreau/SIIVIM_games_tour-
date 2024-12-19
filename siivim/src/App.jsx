@@ -31,6 +31,9 @@ function App() {
             <img src="./image/logo-egame.webp" alt="E-games by Nevers" />
             </text>
           </div>
+          <div className='Notre Tournoi'>
+            <h2>Notre Tournoi</h2>
+          </div>
         </body>
       </div>
     </>
