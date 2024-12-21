@@ -1,43 +1,56 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState, useEffect } from 'react';
+import './App.css';
+import logo from '../image/logov1.png';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoaded(true);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <>
-      <div>
-        <header style={{ backgroundColor: 'darkblue', padding: '10px', height: '10vh', width: '100%', position: 'fixed', top: 0, left: 0 }}>
-          <button className="titre">Accueil</button>
-          <button className="titre">Infos</button>
-          <button className="titre">Inscription</button>
-          <button className="titre">Equipe</button>
-          <button className="titre">Classement</button>
-        </header>
-        <body>
-          <div className='Titre + inscription'>
-            <h2>FORTNITE</h2>
-            <text>E-GAMES SIIViM TOUR BY NEVERS</text>
-            <button>INSCRIPTION</button>
-          </div>
-          <div className='Infos'>
-            <h2>Présentation</h2>
-            <text>Le SIIViM TOUR est un tournoi de jeux vidéo organisé par la ville de Nevers et ses partenaires. Il se déroulera en ligne sur le jeu vidéo Fortnite. Le site internet a été développé par les étudiants d'EPITECH Moulins.
-            <br/>Planning des matchs sur Discord : <a href="https://discord.com/invite/CTSzXXwM5H">EgamesTournament<br/></a>
-            Clip de présentation du tournoi : <a href="https://www.youtube.com/watch?v=Unu4B3LRWuo">Youtube</a>
-            <image></image>
-            <img src="./image/logo-egame.webp" alt="E-games by Nevers" />
-            </text>
-          </div>
-          <div className='Notre Tournoi'>
-            <h2>Notre Tournoi</h2>
-          </div>
-        </body>
+      <div className={`logo-overlay ${isLoaded ? 'hidden' : ''}`}>
+        <img src={logo} alt="Logo" />
       </div>
+      <div>
+        <header className="header">
+          <div className="slide-bar"></div>
+          <div className="button-container" style={{ marginLeft: '350px', marginTop: '18px' }}> 
+            <div className="parallelogram"></div>
+            <button className="titre">ACCUEIL</button>
+          </div>
+          <div className="button-container" style={{ marginLeft: '-50px', marginTop: '18px' }}>
+            <div className="parallelogram"></div>
+            <button className="titre">INFOS</button>
+          </div>
+          <div className="button-container" style={{ marginLeft: '-50px', marginTop: '18px' }}>
+            <div className="parallelogram"></div>
+            <button className="titre">ÉQUIPE</button>
+          </div>
+          <div className="button-container" style={{ marginLeft: '-50px', marginTop: '18px', marginRight: '360px' }}>
+            <div className="parallelogram"></div>
+            <button className="titre">CLASSEMENT</button>
+          </div>
+          <img className="background" src='../image/Fortnite1.webp' alt="Background" />
+        </header>
+        <div className="container"></div>
+        <div style={{ marginTop: '60px' }}></div>
+          <button className='FORTNITE'>S'INSCRIRE</button>
+          <text className='GM'>Game Mode</text>
+          <text className='DUO'>DUO</text>
+          <button className='NPC'>NE PAS COMBLER</button>
+          <p>E-GAMES SIIViM TOUR</p>
+        <div className="bottom-bar"></div>
+
+        </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

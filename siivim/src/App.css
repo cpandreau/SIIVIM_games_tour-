@@ -5,10 +5,278 @@
   text-align: center;
 }
 
-title {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
+@font-face {
+  font-family: 'Fortnite_font';
+  src: url('./assets/Fortnite/fortnite/fortnite.otf') format('truetype');
+}
+
+.slide-bar {
+  width: 800px;
+  height: 40px;
+  border-radius: 30px;
+  position: absolute;
+  top: 30px;
+  left: 70%;
+  transform: translateX(-55%);
+  scale: 1.8;
+  background: linear-gradient(30deg, #3224fd, #1f008f);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  z-index: 2;
+}
+
+.header {
+  background-color: darkblue;
+  padding: 1rem;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between; /* Ensure equal spacing between buttons */
+  align-items: center;
+  z-index: 3; /* Ensure the header is above the slide bar */
+}
+
+.button-container {
   position: relative;
-  background-color: #779AE7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 -1rem; /* Adjust margin for spacing */
+  z-index: 2;
+}
+
+.titre {
+  background-color: #62c5ff;
+  border-color: #2d93cf;
+  border-width: 0.2rem;
+  color: #333;
+  font-family: 'Fortnite_font', sans-serif;
+  font-size: 1.25rem;
+  transition: background-color 0.5s ease-in-out, border-color 0.2s ease-in-out;
+  position: absolute;
+  z-index: 3;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.button-container:hover .titre {
+  box-shadow: 0 0 2.5rem rgba(213, 255, 45, 0.7);
+  border-color: #b7b421;
+  border-width: 0.2rem;
+  color: #333;
+  background-color: #fffc29;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+  animation: pulsate 1s infinite;
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.parallelogram {
+  width: 10rem;
+  height: 3.5rem;
+  background-color: #62c5ff;
+  border-color: #2d93cf;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.625rem;
+  transition: background-color 0.5s ease-in-out, border-color 0.2s ease-in-out, border-radius 0.5s ease-in-out;
+  box-shadow: #072e92 0px 0px 0.9375rem;
+  z-index: 2;
+}
+
+.button-container:hover .parallelogram {
+  background-color: #fffc29;
+  border-color: #b7b421;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  box-shadow: #fffc29 0px 0px 1rem;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slide-bar {
+    width: 90%;
+    transform: translateX(-50%);
+  }
+
+  .parallelogram {
+    width: 8rem;
+    height: 3rem;
+  }
+
+  .titre {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .button-container {
+    margin: 0.5rem 0;
+  }
+}
+
+.logo-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, #0059ff, #06002b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: transform 2s ease-in-out, filter 2s ease-in-out;
+  border-radius: 20px;
+  filter: blur(0);
+}
+
+.logo-overlay.hidden {
+  transform: translateY(-150%);
+  pointer-events: none;
+  filter: blur(10px);
+}
+
+.logo-overlay img {
+  width: 1800px;
+  height: auto;
+}
+
+.background {
+  position: fixed;
+  top: 20%;
+  left: 20%;
+  scale: 1.6545;
+  filter: blur(8px);
+  z-index: 1;
+}
+
+.container {
+  position: fixed;
+  top: 78%;
+  left: 87%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: linear-gradient(120deg, #0059ff, #06002b);
+  width: 400px;
+  height: 300px;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  z-index: 3;
+}
+
+.FORTNITE {
+  position: fixed;
+  top: 82%;
+  left: 79.5%;
+  background-color: #fffc29;
+  border-color: #b7b421;
+  border-width: 0.2rem;
+  color: #333;
+  font-family: 'Fortnite_font', sans-serif;
+  font-size: 4.5rem;
+  transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out;
+  position: absolute;
+  z-index: 3;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.FORTNITE:hover {
+  box-shadow: 0 0 2.5rem rgba(213, 255, 45, 0.7);
+  border-color: #b7b421;
+  border-width: 0.2rem;
+  color: #ffffff;
+  background-color: #fffc29;
+  transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, box-shadow 0.3s ease-in-out;
+  animation: pulsate 1s infinite;
+}
+
+.DUO {
+  position: fixed;
+  top: 65%;
+  left: 83.5%;
+  border-width: 0.2rem;
+  color: #ffffff;
+  font-family: 'Fortnite_font', sans-serif;
+  font-size: 4.5rem;
+  transition: background-color 0.5s ease-in-out, border-color 0.2s ease-in-out;
+  position: absolute;
+  z-index: 3;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.GM {
+  position: fixed;
+  top: 63%;
+  left: 83.5%;
+  border-width: 0.2rem;
+  color: #c4c4c4;
+  font-family: 'Fortnite_font', sans-serif;
+  font-size: 1.5rem;
+  transition: background-color 0.5s ease-in-out, border-color 0.2s ease-in-out;
+  position: absolute;
+  z-index: 3;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.NPC {
+  position: fixed;
+  top: 76%;
+  left: 80.4%;
+  border-width: 0.2rem;
+  color: #c4c4c4;
+  background-color: #000655;
+  font-family: 'Fortnite_font', sans-serif;
+  font-size: 1.5rem;
+  transition: background-color 0.5s ease-in-out, border-color 0.2s ease-in-out;
+  position: absolute;
+  z-index: 3;
+  padding: 0.5rem 4rem;
+  border: none;
+  cursor: pointer;
+}
+
+.FORTNITE:active {
+  background-color: #969696;
+  border-color: #696969;
+  color: #c7c7c7;
+  transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out;
+}
+
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 105%;
+  height: 35px;
+  background: linear-gradient(35deg, #5347ff, #0c01a1);
+  z-index: 3;
+  text-align: center;
+  color: white;
+  font-family: 'Fortnite_font', sans-serif;
+  line-height: 30px;
+  border-radius: 8px;;
 }
