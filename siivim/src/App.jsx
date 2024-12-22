@@ -24,20 +24,16 @@ function App() {
             </div>
             <div>
               <header className="header">
-                <div className="slide-bar"></div>
-                <div className="button-container" style={{ marginLeft: '350px', marginTop: '18px' }}> 
+                <div className="slide-bar" style={{ marginLeft: '15rem', marginTop: '1.3rem'}}></div>
+                <div className="button-container" style={{ marginLeft: '-120rem', marginTop: '1.3rem' }}> 
                   <div className="parallelogram"></div>
                   <button className="titre" onClick={() => setPage('home')}>ACCUEIL</button>
                 </div>
-                <div className="button-container" style={{ marginLeft: '-50px', marginTop: '18px' }}>
+                <div className="button-container" style={{ marginLeft: '-50px', marginTop: '1.3rem' }}>
                   <div className="parallelogram"></div>
                   <button className="titre" onClick={() => setPage('infos')}>INFOS</button>
                 </div>
-                <div className="button-container" style={{ marginLeft: '-50px', marginTop: '18px' }}>
-                  <div className="parallelogram"></div>
-                  <button className="titre">ÉQUIPE</button>
-                </div>
-                <div className="button-container" style={{ marginLeft: '-50px', marginTop: '18px', marginRight: '360px' }}>
+                <div className="button-container" style={{ marginRight: '17.8rem', marginTop: '1.3rem'}}>
                   <div className="parallelogram"></div>
                   <button className="titre">CLASSEMENT</button>
                 </div>
@@ -52,7 +48,7 @@ function App() {
                 <p>E-GAMES SIIViM TOUR</p>
               <div className="info_bar"></div>
               <div className="info_bar2">SEASON OG</div>
-              <div className="info_bar3">SAMEDI 7-8 FÉVRIER 2025</div>
+              <div className="info_bar3">8-9 FÉVRIER 2025</div>
               <img className="og-map" src='../image/OG.webp' alt="Map"/>
               <div className="quetes">S'amuser</div>
               <div className="quete-bar-fun"></div>
@@ -72,30 +68,26 @@ function App() {
         return (
           <div>
             <header className="header">
-              <div className="slide-bar"></div>
-                <div className="button-container" style={{ marginLeft: '350px', marginTop: '18px' }}> 
+            <div className="slide-bar" style={{ marginLeft: '15rem', marginTop: '1.3rem'}}></div>
+                <div className="button-container" style={{ marginLeft: '-120rem', marginTop: '1.3rem' }}> 
                   <div className="parallelogram"></div>
                   <button className="titre" onClick={() => setPage('home')}>ACCUEIL</button>
                 </div>
-                <div className="button-container" style={{ marginLeft: '-50px', marginTop: '18px' }}>
+                <div className="button-container" style={{ marginLeft: '-50px', marginTop: '1.3rem' }}>
                   <div className="parallelogram"></div>
                   <button className="titre" onClick={() => setPage('infos')}>INFOS</button>
                 </div>
-                <div className="button-container" style={{ marginLeft: '-50px', marginTop: '18px' }}>
-                  <div className="parallelogram"></div>
-                  <button className="titre">ÉQUIPE</button>
-                </div>
-                <div className="button-container" style={{ marginLeft: '-50px', marginTop: '18px', marginRight: '360px' }}>
+                <div className="button-container" style={{ marginRight: '17.8rem', marginTop: '1.3rem'}}>
                   <div className="parallelogram"></div>
                   <button className="titre">CLASSEMENT</button>
-              </div>
+                </div>
              <img className="background2" src='../image/Fortnite2.webp' alt="Background"/>
             </header>
             <div className="info-content">
               <div className= "parallelogram2"></div>
               <h1 className="INSTRUCTIONS">Instructions</h1>
               <img className="kevin" src='../image/kevin.webp' alt="Image"/>
-              <div className="case">Organisé par la Ville de Nevers, ce tournoi se déroule du 7 février 2025 au 8 février 2025 sur Fortnite.</div>
+              <div className="case">Organisé par la Ville de Nevers, ce tournoi se déroule du 8 février 2025 au 9 février 2025 sur Fortnite.</div>
               <a className="Regl" href="/ppt/reglement.pdf" download>Télécharger le réglement du tournoi ici.</a>
             <h2>Conditions d'éligibilité</h2>
             <p>Ouvert à toutes les équipes et joueurs respectant les conditions d'éligibilité.

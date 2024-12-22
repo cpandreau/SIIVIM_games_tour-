@@ -10,15 +10,19 @@
   src: url('./assets/Fortnite/fortnite/fortnite.otf') format('truetype');
 }
 
+body {
+  font-family: 'Fortnite_font', sans-serif;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 .slide-bar {
-  width: 800px;
-  height: 40px;
+  width: 1450px;
+  height: 70px;
   border-radius: 30px;
-  position: absolute;
-  top: 30px;
-  left: 70%;
-  transform: translateX(-55%);
-  scale: 1.8;
+  position: relative;
   background: linear-gradient(30deg, #3224fd, #1f008f);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
   z-index: 2;
@@ -42,7 +46,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 -1rem; /* Adjust margin for spacing */
   z-index: 2;
 }
 
@@ -51,10 +54,9 @@
   border-color: #2d93cf;
   border-width: 0.2rem;
   color: #333;
-  font-family: 'Fortnite_font', sans-serif;
   font-size: 1.25rem;
   transition: background-color 0.5s ease-in-out, border-color 0.2s ease-in-out;
-  position: absolute;
+  position: relative;
   z-index: 3;
   padding: 0.5rem 1rem;
   border: none;
@@ -189,7 +191,6 @@
   border-color: #b7b421;
   border-width: 0.2rem;
   color: #333;
-  font-family: 'Fortnite_font', sans-serif;
   font-size: 4.5rem;
   transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out;
   position: absolute;
@@ -203,7 +204,6 @@
   box-shadow: 0 0 2.5rem rgba(213, 255, 45, 0.7);
   border-color: #b7b421;
   border-width: 0.2rem;
-  color: #ffffff;
   background-color: #fffc29;
   transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, box-shadow 0.3s ease-in-out;
   animation: pulsate 1s infinite;
@@ -214,8 +214,6 @@
   top: 65%;
   left: 83.5%;
   border-width: 0.2rem;
-  color: #ffffff;
-  font-family: 'Fortnite_font', sans-serif;
   font-size: 4.5rem;
   transition: background-color 0.5s ease-in-out, border-color 0.2s ease-in-out;
   position: absolute;
@@ -248,7 +246,6 @@
   border-width: 0.2rem;
   color: #c4c4c4;
   background-color: #000655;
-  font-family: 'Fortnite_font', sans-serif;
   font-size: 1.5rem;
   transition: background-color 0.5s ease-in-out, border-color 0.2s ease-in-out;
   position: absolute;
@@ -271,7 +268,6 @@
   height: 500px;
   background-color:#363b6662;
   z-index: 4;
-  font-family: "Fortnite_font", sans-serif;
   font-size: 35px; 
   top: 20%;
   left: 2%;
@@ -285,7 +281,6 @@
   height: 50px;
   background-color:#363b66;
   z-index: 4;
-  font-family: "Fortnite_font", sans-serif;
   font-size: 35px; 
   top: 20%;
   left: 2%;
@@ -299,7 +294,6 @@
   height: 350px;
   background-color:#363b6607;
   z-index: 4;
-  font-family: "Fortnite_font", sans-serif;
   font-size: 35px; 
   top: 25%;
   left: 2%;
@@ -316,7 +310,6 @@
 }
 
 .quetes {
-  font-family: "Fortnite_font", sans-serif;
   position: fixed;
   top: 55%;
   left: 4%;
@@ -325,7 +318,6 @@
 }
 
 .winrate {
-  font-family: "Fortnite_font", sans-serif;
   position: fixed;
   top: 58%;
   left: 5.5%;
@@ -341,7 +333,6 @@
 }
 
 .xp {
-  font-family: "Fortnite_font", sans-serif;
   position: fixed;
   top: 57.2%;
   left: 17.5%;
@@ -353,7 +344,6 @@
 }
 
 .quete2 {
-  font-family: "Fortnite_font", sans-serif;
   position: fixed;
   top: 62%;
   left: 5%;
@@ -364,7 +354,6 @@
 }
 
 .winrate2 {
-  font-family: "Fortnite_font", sans-serif;
   position: fixed;
   top: 65%;
   left: 5.5%;
@@ -386,7 +375,7 @@
   scale: 2;
   z-index: 10;
   transform: translate(-50%, -50%);
-  transition: transform 2s ease-in-out; /* Ajoute une transition pour le déplacement et la rotation */
+  transition: transform 2s ease-in-out;
 }
 
 .llama:hover {
