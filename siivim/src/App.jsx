@@ -50,6 +50,20 @@ function App() {
                 <text className='DUO'>DUO</text>
                 <button className='NPC'>NE PAS COMBLER</button>
                 <p>E-GAMES SIIViM TOUR</p>
+              <div className="info_bar"></div>
+              <div className="info_bar2">SEASON OG</div>
+              <div className="info_bar3">SAMEDI 7-8 FÉVRIER 2025</div>
+              <img className="og-map" src='../image/OG.webp' alt="Map"/>
+              <div className="quetes">S'amuser</div>
+              <div className="quete-bar-fun"></div>
+              <div className="winrate">100%</div>
+              <img className="xp" src='../image/xp-fortnite.webp' alt="XP"/>
+              <img className="etoile" src='../image/etoile-fortnite.webp' alt="Etoile"/>
+              <div className="quete2">Remporter la victoire</div>
+              <img className="etoile2" src='../image/etoile-fortnite.webp' alt="Etoile"/>
+              <img className="xp2" src='../image/xp-fortnite.webp' alt="XP"/>
+              <div className="winrate2">???</div>
+              <img className="llama" src='../image/Llama.webp' alt="Lama"/>
               <div className="bottom-bar"></div>
             </div>
           </>
@@ -59,36 +73,36 @@ function App() {
           <div>
             <header className="header">
               <div className="slide-bar"></div>
-              <div className="button-container" style={{ marginLeft: '350px', marginTop: '18px' }}> 
-                <div className="parallelogram"></div>
-                <button className="titre" onClick={() => setPage('home')}>ACCUEIL</button>
+                <div className="button-container" style={{ marginLeft: '350px', marginTop: '18px' }}> 
+                  <div className="parallelogram"></div>
+                  <button className="titre" onClick={() => setPage('home')}>ACCUEIL</button>
+                </div>
+                <div className="button-container" style={{ marginLeft: '-50px', marginTop: '18px' }}>
+                  <div className="parallelogram"></div>
+                  <button className="titre" onClick={() => setPage('infos')}>INFOS</button>
+                </div>
+                <div className="button-container" style={{ marginLeft: '-50px', marginTop: '18px' }}>
+                  <div className="parallelogram"></div>
+                  <button className="titre">ÉQUIPE</button>
+                </div>
+                <div className="button-container" style={{ marginLeft: '-50px', marginTop: '18px', marginRight: '360px' }}>
+                  <div className="parallelogram"></div>
+                  <button className="titre">CLASSEMENT</button>
               </div>
-              <div className="button-container" style={{ marginLeft: '-50px', marginTop: '18px' }}>
-                <div className="parallelogram"></div>
-                <button className="titre" onClick={() => setPage('infos')}>INFOS</button>
-              </div>
-              <div className="button-container" style={{ marginLeft: '-50px', marginTop: '18px' }}>
-                <div className="parallelogram"></div>
-                <button className="titre">ÉQUIPE</button>
-              </div>
-              <div className="button-container" style={{ marginLeft: '-50px', marginTop: '18px', marginRight: '360px' }}>
-                <div className="parallelogram"></div>
-                <button className="titre">CLASSEMENT</button>
-              </div>
-             {/* <img className="background" src='../image/Fortnite1.webp' alt="Background" />*/}
+             <img className="background2" src='../image/Fortnite2.webp' alt="Background"/>
             </header>
             <div className="info-content">
-              <h1>Instructions</h1>
-              <p>Organisé par la Ville de Nevers, ce tournoi se déroule du 7 février 2025 au 8 février 2025 sur Fortnite.</p>
-              <p>
-                <a href="/ppt/reglement.pdf" download>Télécharger le réglement du tournoi ici.</a>
-              </p>
-              <h2>Conditions d'éligibilité</h2>
-              <p>Ouvert à toutes les équipes et joueurs respectant les conditions d'éligibilité.
-              Interdit aux employés et agents de Epic Games ou membres du Comité d'organisation et leur famille immédiate.</p>
-              <p>Au moins un joueur de l'équipe doit être domicilié dans une ville éligible. </p>
-              <p>Les joueurs doivent avoir un compte Epic Games et Fortnite valide</p>
-              <p>Les joueurs ne peuvent participer que dans une seule équipe pendant toute la durée du tournoi.</p>
+              <div className= "parallelogram2"></div>
+              <h1 className="INSTRUCTIONS">Instructions</h1>
+              <img className="kevin" src='../image/kevin.webp' alt="Image"/>
+              <div className="case">Organisé par la Ville de Nevers, ce tournoi se déroule du 7 février 2025 au 8 février 2025 sur Fortnite.</div>
+              <a className="Regl" href="/ppt/reglement.pdf" download>Télécharger le réglement du tournoi ici.</a>
+            <h2>Conditions d'éligibilité</h2>
+            <p>Ouvert à toutes les équipes et joueurs respectant les conditions d'éligibilité.
+            Interdit aux employés et agents de Epic Games ou membres du Comité d'organisation et leur famille immédiate.</p>
+            <p>Au moins un joueur de l'équipe doit être domicilié dans une ville éligible. </p>
+            <p>Les joueurs doivent avoir un compte Epic Games et Fortnite valide</p>
+            <p>Les joueurs ne peuvent participer que dans une seule équipe pendant toute la durée du tournoi.</p>
               <p>Tous les participants doivent respecter l'esprit de fair-play et les règles du jeu.</p>
               <p>Les inscriptions doivent être complètes et conformes aux exigences avant la date limite fixée par l'organisation.</p>
               <p>Les participants doivent s'assurer de la stabilité de leur connexion internet pour les phases en ligne.</p>
