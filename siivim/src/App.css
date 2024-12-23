@@ -26,6 +26,7 @@ body {
   background: linear-gradient(30deg, #3224fd, #1f008f);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
   z-index: 2;
+  padding: 0.2rem;
 }
 
 .header {
@@ -425,14 +426,11 @@ body {
 
 .INSTRUCTIONS {
   position: relative;
-  left: -50%;
-  top: -50%;
-  translate: 0px -380px;
   font-family: 'Fortnite_font', sans-serif;
   font-size: 4rem;
   color: #ffffff;
   text-shadow: 0 0 0.5rem #fffc29;
-  z-index: 30;
+  z-index: 3;
 }
 
 .background2 {
@@ -453,9 +451,7 @@ body {
   width: 20rem;
   height: 5rem;
   background: linear-gradient(120deg, #0059ff, #06002b);
-  position: absolute;
-  top: 5%;
-  left: 0%;
+  position: relative;
   transform: translate(-50%, -500%);
   border-radius: 0.625rem;
   transition: background-color 0.5s ease-in-out, border-color 0.2s ease-in-out, border-radius 0.5s ease-in-out;
@@ -519,20 +515,14 @@ body {
 
 .kevin {
   position: fixed;
-  top: 25%;
-  left: 75%;
   scale: 1;
   z-index: 1000;
-  transform: translate(-50%, -50%);
   animation: float 3s ease-in-out infinite;
 }
 
 .Regl {
-  position: fixed;
-  top: 34.5%;
-  left: 56%;
+  position: relative;
   scale: 2;
   z-index: 1000;
   font-family: "Fortnite_font", sans-serif;
-  transform: translate(-50%, -50%);
 }
