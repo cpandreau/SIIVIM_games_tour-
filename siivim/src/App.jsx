@@ -35,7 +35,7 @@ function App() {
                 </div>
                 <div className="button-container" style={{ marginRight: '17.8rem', marginTop: '1.3rem'}}>
                   <div className="parallelogram"></div>
-                  <button className="titre">CLASSEMENT</button>
+                  <button className="titre" onClick={() => setPage('classement')}>CLASSEMENT</button>
                 </div>
                 <img className="background" src='../image/Fortnite1.webp' alt="Background" />
               </header>
@@ -80,7 +80,7 @@ function App() {
               </div>
               <div className="button-container" style={{ marginRight: '17.8rem', marginTop: '1.3rem' }}>
                 <div className="parallelogram"></div>
-                <button className="titre">CLASSEMENT</button>
+                <button className="titre" onClick={() => setPage('classement')}>CLASSEMENT</button>
               </div>
               <img className="background2" src='../image/Fortnite2.webp' alt="Background" />
             </header>
@@ -108,6 +108,31 @@ function App() {
               <p>Finale: Dimanche 9 février 2025</p>
               <h2 style={{ marginTop: '2rem' }}>Dotations</h2>
               <p>1er Duo 600€</p>
+            </div>
+          </div>
+        );
+
+      case 'classement':
+        return (
+          <div>
+            <header className="header">
+              <div className="slide-bar" style={{ marginLeft: '15rem', marginTop: '1.3rem' }}></div>
+              <div className="button-container" style={{ marginLeft: '-120rem', marginTop: '1.3rem' }}>
+                <div className="parallelogram"></div>
+                <button className="titre" onClick={() => setPage('home')}>ACCUEIL</button>
+              </div>
+              <div className="button-container" style={{ marginLeft: '-50px', marginTop: '1.3rem' }}>
+                <div className="parallelogram"></div>
+                <button className="titre" onClick={() => setPage('infos')}>INFOS</button>
+              </div>
+              <div className="button-container" style={{ marginRight: '17.8rem', marginTop: '1.3rem' }}>
+                <div className="parallelogram"></div>
+                <button className="titre" onClick={() => setPage('classement')}>CLASSEMENT</button>
+              </div>
+              <img className="background3" src='../image/Fortnite3.webp' alt="Background" />
+            </header>
+            <div className="classement-content" style={{ marginTop: '2rem' }}>
+              <h1 className="coming-soon" style={{ marginTop: '2rem', textAlign: 'center', color: 'black' }}>Il n'y a pas encore de classement disponible</h1>
             </div>
           </div>
         );
