@@ -1,86 +1,31 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
 @font-face {
   font-family: 'Fortnite_font';
   src: url('./assets/Fortnite/fortnite/fortnite.otf') format('truetype');
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: no-repeat url('../image/Fortnite1.webp');
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container-blur {
+  backdrop-filter: blur(8px);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   font-family: 'Fortnite_font', sans-serif;
   color: #ffffff;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-
-.slide-bar {
-  width: 1450px;
-  height: 70px;
-  border-radius: 30px;
-  position: relative;
-  background: linear-gradient(30deg, #3224fd, #1f008f);
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-  z-index: 2;
-  padding: 0.2rem;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  padding: 0 1rem;
-}
-
-header {
-  padding: 1rem;
-  height: 50px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 3;
-}  
-
-.button-container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-}
-
-.titre {
-  background-color: #62c5ff;
-  border-color: #2d93cf;
-  border-width: 0.2rem;
-  color: #333;
-  font-size: 1.25rem;
-  transition: background-color 0.5s ease-in-out, border-color 0.2s ease-in-out;
-  position: relative;
-  z-index: 3;
-  padding: 0.5rem 1rem;
-  border: none;
-  cursor: pointer;
-}
-
-.button-container:hover .titre {
-  box-shadow: 0 0 2.5rem rgba(213, 255, 45, 0.7);
-  border-color: #b7b421;
-  border-width: 0.2rem;
-  color: #333;
-  background-color: #fffc29;
-  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
-  animation: pulsate 1s infinite;
 }
 
 @keyframes pulsate {
@@ -92,54 +37,6 @@ header {
   }
   100% {
     transform: scale(1);
-  }
-}
-
-.parallelogram {
-  width: 10rem;
-  height: 3.5rem;
-  background-color: #62c5ff;
-  border-color: #2d93cf;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 0.625rem;
-  transition: background-color 0.5s ease-in-out, border-color 0.2s ease-in-out, border-radius 0.5s ease-in-out;
-  box-shadow: #072e92 0px 0px 0.9375rem;
-  z-index: 2;
-}
-
-.button-container:hover .parallelogram {
-  background-color: #fffc29;
-  border-color: #b7b421;
-  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-  box-shadow: #fffc29 0px 0px 1rem;
-}
-
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .slide-bar {
-    width: 90%;
-    transform: translateX(-50%);
-  }
-
-  .parallelogram {
-    width: 8rem;
-    height: 3rem;
-  }
-
-  .titre {
-    font-size: 1rem;
-    padding: 0.5rem;
-  }
-
-  .button-container {
-    margin: 0.5rem 0;
   }
 }
 
@@ -170,214 +67,6 @@ header {
   height: auto;
 }
 
-.background {
-  position: fixed;
-  top: 20%;
-  left: 20%;
-  scale: 1.6545;
-  filter: blur(8px);
-  z-index: 1;
-}
-
-.container {
-  position: fixed;
-  top: 78%;
-  left: 87%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  background: linear-gradient(120deg, #0059ff, #06002b);
-  width: 400px;
-  height: 300px;
-  border-radius: 1rem;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
-  z-index: 3;
-}
-
-.FORTNITE {
-  position: fixed;
-  top: 82%;
-  left: 79.5%;
-  background-color: #fffc29;
-  border-color: #b7b421;
-  border-width: 0.2rem;
-  color: #333;
-  font-size: 4.5rem;
-  transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out;
-  position: absolute;
-  z-index: 3;
-  padding: 0.5rem 1rem;
-  border: none;
-  cursor: pointer;
-}
-
-.FORTNITE:hover {
-  box-shadow: 0 0 2.5rem rgba(213, 255, 45, 0.7);
-  border-color: #b7b421;
-  border-width: 0.2rem;
-  background-color: #fffc29;
-  transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, box-shadow 0.3s ease-in-out;
-  animation: pulsate 1s infinite;
-}
-
-.DUO {
-  position: fixed;
-  top: 65%;
-  left: 83.5%;
-  border-width: 0.2rem;
-  font-size: 4.5rem;
-  transition: background-color 0.5s ease-in-out, border-color 0.2s ease-in-out;
-  position: absolute;
-  z-index: 3;
-  padding: 0.5rem 1rem;
-  border: none;
-  cursor: pointer;
-}
-
-.GM {
-  position: fixed;
-  top: 63%;
-  left: 83.5%;
-  border-width: 0.2rem;
-  color: #c4c4c4;
-  font-family: 'Fortnite_font', sans-serif;
-  font-size: 1.5rem;
-  transition: background-color 0.5s ease-in-out, border-color 0.2s ease-in-out;
-  position: absolute;
-  z-index: 3;
-  padding: 0.5rem 1rem;
-  border: none;
-  cursor: pointer;
-}
-
-.NPC {
-  position: fixed;
-  top: 76%;
-  left: 80.4%;
-  border-width: 0.2rem;
-  color: #c4c4c4;
-  background-color: #000655;
-  font-size: 1.5rem;
-  transition: background-color 0.5s ease-in-out, border-color 0.2s ease-in-out;
-  position: absolute;
-  z-index: 3;
-  padding: 0.5rem 4rem;
-  border: none;
-  cursor: pointer;
-}
-
-.FORTNITE:active {
-  background-color: #969696;
-  border-color: #696969;
-  color: #c7c7c7;
-  transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out;
-}
-
-.info_bar {
-  position: fixed;
-  width: 400px;
-  height: 500px;
-  background-color:#363b6662;
-  z-index: 4;
-  font-size: 35px; 
-  top: 20%;
-  left: 2%;
-  border-radius: 8px;
-  box-shadow: #06002b 0px 0px 0.9375rem;
-}
-
-.info_bar2 {
-  position: fixed;
-  width: 400px;
-  height: 50px;
-  background-color:#363b66;
-  z-index: 4;
-  font-size: 35px; 
-  top: 20%;
-  left: 2%;
-  border-radius: 8px;
-  box-shadow: #06002b 0px 0px 0.9375rem;
-}
-
-.info_bar3 {
-  position: fixed;
-  width: 400px;
-  height: 350px;
-  background-color:#363b6607;
-  z-index: 4;
-  font-size: 35px; 
-  top: 25%;
-  left: 2%;
-}
-
-.og-map {
-  position: fixed;
-  top: 17%;
-  left: -10%;
-  scale: 0.464;
-  border-radius: 25px;
-  z-index: 10;
-  box-shadow: #06002b 0px 0px 0.9375rem;
-}
-
-.quetes {
-  position: fixed;
-  top: 55%;
-  left: 4%;
-  scale: 1.5;
-  z-index: 10;
-}
-
-.winrate {
-  position: fixed;
-  top: 58%;
-  left: 5.5%;
-  scale: 1.5;
-  z-index: 10;
-  width: 170px;
-  height: 15px;
-  border-color: #000000;
-  border-width: 50px;
-  background-color: #fffc29;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-}
-
-.xp {
-  position: fixed;
-  top: 57.2%;
-  left: 17.5%;
-  z-index: 10;
-  width: 30px;
-  height: 30px;
-  border-color: #000000;
-  border-width: 50px;
-}
-
-.quete2 {
-  position: fixed;
-  top: 62%;
-  left: 5%;
-  z-index: 10;
-  scale: 1.5;
-  border-color: #000000;
-  border-width: 50px;
-}
-
-.winrate2 {
-  position: fixed;
-  top: 65%;
-  left: 5.5%;
-  scale: 1.5;
-  z-index: 10;
-  width: 170px;
-  height: 15px;
-  border-color: #000000;
-  border-width: 50px;
-  background-color: #474747;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-}
-
 .llama {
   position: fixed;
   top: 110%;
@@ -390,47 +79,6 @@ header {
 
 .llama:hover {
   transform: translate(-35%, -55%) rotate(45deg); /* Décale légèrement et effectue une rotation de 45 degrés */
-}
-
-.quete-bar-fun {
-  position: fixed;
-  width: 380px;
-  height: 150px;
-  background-color:#2b2b30c9;
-  z-index: 4;
-  top: 54%;
-  left: 2.5%;
-  border-color: #000000;
-  border-width: 5px;
-  box-shadow: #06002b 0px 0px 1rem;
-  border-radius: 8px;
-}
-
-.etoile {
-  font-family: "Fortnite_font", sans-serif;
-  position: fixed;
-  top: 57.2%;
-  left: 20%;
-  z-index: 10;
-  width: 30px;
-  height: 30px;
-  border-color: #000000;
-  border-width: 50px;
-}
-
-.bottom-bar {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 105%;
-  height: 35px;
-  background: linear-gradient(35deg, #5347ff, #0c01a1);
-  z-index: 3;
-  text-align: center;
-  color: white;
-  font-family: 'Fortnite_font', sans-serif;
-  line-height: 30px;
-  border-radius: 8px;;
 }
 
 .INSTRUCTIONS {
@@ -466,29 +114,6 @@ header {
   transition: background-color 0.5s ease-in-out, border-color 0.2s ease-in-out, border-radius 0.5s ease-in-out;
   box-shadow: #072e92 0px 0px 0.9375rem;
   z-index: 2;
-}
-
-.etoile2 {
-  font-family: "Fortnite_font", sans-serif;
-  position: fixed;
-  top: 64.5%;
-  left: 20%;
-  z-index: 10;
-  width: 30px;
-  height: 30px;
-  border-color: #000000;
-  border-width: 50px;
-}
-
-.xp2 {
-  font-family: "Fortnite_font", sans-serif;
-  position: fixed;
-  top: 64.5%;
-  left: 17.5%;
-  z-index: 10;
-  width: 30px;
-  height: 30px;
-  border-color: #000000;
 }
 
 .case {

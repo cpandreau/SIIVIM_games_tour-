@@ -1,0 +1,49 @@
+@keyframes pulsate {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0;
+    flex-direction: row;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    padding: 0.8rem 2rem;
+    background: linear-gradient(30deg, #3224fd, #1f008f);
+    border-radius: 30px;
+}
+
+header nav a {
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: color 0.2s ease-in-out;
+    background-color: #62c5ff;
+    border-color: #2d93cf;
+    box-shadow: #072e92 0px 0px 0.9375rem;
+    border-radius: 10px;
+    padding: 0.8rem 3.5rem;
+}
+
+header nav a:hover {
+    color: #333;
+    animation: pulsate 0.8s ease-in-out infinite;  background-color: #fffc29;
+    border-color: #b7b421;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    box-shadow: #fffc29 0px 0px 1rem;
+}

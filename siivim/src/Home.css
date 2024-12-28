@@ -1,0 +1,144 @@
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 38%;
+    top: 55%;
+    width: 20%;
+    border-radius: 15px;
+    background: linear-gradient(120deg, #0059ff, #06002b);
+    padding: 0.8rem 0;
+    box-shadow: #091327 2px 2px 15px;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.npc {
+    font-size: 1.3rem;
+    border-radius: 8px;
+    padding: 0.3rem 4.5rem;
+    border-width: 0.2rem;
+    color: #c4c4c4;
+    background-color: #000655;
+}
+
+.duo {
+    font-size: 4.5rem;
+    line-height: 1.1;
+}
+
+.register{
+    font-size: 3rem;
+    color: #ffffff;
+    text-decoration: none;
+    width: 80%;
+    text-align: center;
+    padding: 0.3rem 0;
+    background: linear-gradient(120deg, #e4e71c, #e5f83d);
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.game-mode {
+    font-size: 1.2rem;
+    color: #b3b3b3;
+}
+
+.register-container p {
+    margin: 0;
+    padding: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.bottom-bar {
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    height: 2rem;
+    z-index: -1;
+    background: linear-gradient(120deg, #0059ff, #06002b);
+    border-radius: 0 0 15px 15px;
+}
+
+.bottom-bar p {
+    font-size: 0.8rem;
+    color: #ffffff65;
+    text-align: center;
+}
+
+.register:active {
+    background: linear-gradient(120deg, #b9b9b9, #8a8a8a);
+    border-color: #696969;
+    color: #c7c7c7;
+    transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out;
+}
+
+.register:hover {
+    box-shadow: 0 0 2.5rem rgba(213, 255, 45, 0.7);
+    border-color: #b7b421;
+    border-width: 0.2rem;
+    color: #333;
+    background-color: #fffc29;
+    transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, box-shadow 0.3s ease-in-out;
+    animation: pulsate 1s infinite;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    right: 35%;
+    bottom: 20%;
+    width: 20%;
+    border-radius: 15px;
+    background-color: #2d2d2e5d;
+    box-shadow: #091327 2px 2px 15px;
+}
+
+.og-season {
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    color: #c4c4c4;
+    background-color: #30304d;
+    box-shadow: #091327 2px 2px 15px;
+}
+
+.og-season p {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0.5rem 0.5rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.date {
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    color: #c4c4c4;
+}
+
+.date p {
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0.2rem;
+}
+
+.og-map img {
+    border-radius: 20px;
+    position: relative;
+    scale: 0.445;
+    box-shadow: #091327 2px 2px 15px;
+}

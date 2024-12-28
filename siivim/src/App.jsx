@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 import logo from '../image/logov1.png';
+import Header from './Header';
+import Home from './Home';
 
 function App() {
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(true);
   const [page, setPage] = useState('home');
 
   useEffect(() => {
@@ -18,36 +20,18 @@ function App() {
     switch (page) {
       case 'home':
         return (
-          <>
-            <div className={`logo-overlay ${isLoaded ? 'hidden' : ''}`}>
+          <div className="container-blur">
+            {/* <div className={`logo-overlay ${isLoaded ? 'hidden' : ''}`}>
               <img src={logo} alt="Logo" />
-            </div>
-            <div>
-              <header>
-                <nav>
-                <div className="slide-bar" style={{ marginLeft: '15rem', marginTop: '1.3rem'}}></div>
-                <div className="button-container" style={{ marginLeft: '-120rem', marginTop: '1.3rem' }}> 
-                  <div className="parallelogram"></div>
-                  <a className="titre" onClick={() => setPage('home')}>ACCUEIL</a>
-                </div>
-                <div className="button-container" style={{ marginLeft: '-50px', marginTop: '1.3rem' }}>
-                  <div className="parallelogram"></div>
-                  <a className="titre" onClick={() => setPage('infos')}>INFOS</a>
-                </div>
-                <div className="button-container" style={{ marginRight: '17.8rem', marginTop: '1.3rem'}}>
-                  <div className="parallelogram"></div>
-                  <a className="titre" onClick={() => setPage('classement')}>CLASSEMENT</a>
-                </div>
-                </nav>
-                <img className="background" src='../image/Fortnite1.webp' alt="Background" />
-              </header>
-              <div className="container"></div>
+            </div> */}
+            <Header />
+            <Home />
+              {/* <div className="container"></div>
               <div style={{ marginTop: '60px' }}></div>
                 <button className='FORTNITE'>S'INSCRIRE</button>
                 <text className='GM'>Game Mode</text>
                 <text className='DUO'>DUO</text>
                 <button className='NPC'>NE PAS COMBLER</button>
-                <p>E-GAMES SIIViM TOUR</p>
               <div className="info_bar"></div>
               <div className="info_bar2">SEASON OG</div>
               <div className="info_bar3">8-9 FÉVRIER 2025</div>
@@ -62,9 +46,8 @@ function App() {
               <img className="xp2" src='../image/xp-fortnite.webp' alt="XP"/>
               <div className="winrate2">???</div>
               <img className="llama" src='../image/Llama.webp' alt="Lama"/>
-              <div className="bottom-bar"></div>
-            </div>
-          </>
+              <div className="bottom-bar"></div> */}
+          </div>
         );
         
       case 'infos':
