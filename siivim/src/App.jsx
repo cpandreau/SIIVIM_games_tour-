@@ -23,20 +23,22 @@ function App() {
               <img src={logo} alt="Logo" />
             </div>
             <div>
-              <header className="header">
+              <header>
+                <nav>
                 <div className="slide-bar" style={{ marginLeft: '15rem', marginTop: '1.3rem'}}></div>
                 <div className="button-container" style={{ marginLeft: '-120rem', marginTop: '1.3rem' }}> 
                   <div className="parallelogram"></div>
-                  <button className="titre" onClick={() => setPage('home')}>ACCUEIL</button>
+                  <a className="titre" onClick={() => setPage('home')}>ACCUEIL</a>
                 </div>
                 <div className="button-container" style={{ marginLeft: '-50px', marginTop: '1.3rem' }}>
                   <div className="parallelogram"></div>
-                  <button className="titre" onClick={() => setPage('infos')}>INFOS</button>
+                  <a className="titre" onClick={() => setPage('infos')}>INFOS</a>
                 </div>
                 <div className="button-container" style={{ marginRight: '17.8rem', marginTop: '1.3rem'}}>
                   <div className="parallelogram"></div>
-                  <button className="titre" onClick={() => setPage('classement')}>CLASSEMENT</button>
+                  <a className="titre" onClick={() => setPage('classement')}>CLASSEMENT</a>
                 </div>
+                </nav>
                 <img className="background" src='../image/Fortnite1.webp' alt="Background" />
               </header>
               <div className="container"></div>
