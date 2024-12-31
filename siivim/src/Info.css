@@ -1,0 +1,171 @@
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    right: 35%;
+}
+
+.inst {
+    font-size: 2rem;
+    color: #d0ecff;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: #16015f 2px 2px 15px;
+    background: linear-gradient(30deg, #3224fd, #16015f);
+}
+
+.pres {
+    font-size: 2.5rem;
+    color: #d0ecff;
+    text-align: center;
+    padding: 2rem;
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: #16015f 2px 2px 15px;
+    background: linear-gradient(30deg, #3224fd, #16015f);
+}
+
+.kevin {
+    position: fixed;
+    scale: 1;
+    z-index: 1000;
+    animation: float 3s ease-in-out infinite;
+    top: 40%;
+    right: 12%;
+}
+
+.rules {
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    width: 60%;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: #1a085c 2px 2px 25px;
+    background: linear-gradient(30deg, #1c157c, #0b0130);
+}
+
+.eligibility {
+    perspective: 1000px;
+}
+
+.eligibility-inner, .reglement-inner {
+    position: relative;
+    height: 10%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.eligibility.flipped .eligibility-inner {
+    transform: rotateY(180deg);
+}
+
+.eligibility-front, .eligibility-back {
+    background: linear-gradient(30deg, #1c157c, #0b0130);
+    border-radius: 50px;
+    width: 90%;
+    padding: 1rem;
+    backface-visibility: hidden;
+    box-shadow: #000000 2px 2px 25px;
+}
+
+.eligibility-back {
+    transform: rotateY(180deg);
+    background: linear-gradient(30deg, #1c157c, #0b0130);
+    color: #ffffff;
+    border-radius: 50px;
+    padding: 1rem;
+    box-shadow: #000000 2px 2px 25px;
+}
+
+.eli-button {
+    font-size: 1.5rem;
+    color: #000000;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: #bbff00 2px 2px 25px;
+    background: linear-gradient(30deg, #e9ff24, #8ea120);
+}
+
+.eli-button:hover {
+    background: linear-gradient(30deg, #fffc29, #b7b421);
+    box-shadow: #fffc29 2px 2px 25px;
+    animation: pulsate 0.8s ease-in-out infinite;
+}
+
+.reglement {
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.reglement-inner {
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    height: 500%;
+}
+
+.reglement.flipped .reglement-inner {
+    transform: rotateY(180deg);
+}
+
+.reglement-front, .reglement-back {
+    background: linear-gradient(30deg, #1c157c, #0b0130);
+    border-radius: 50px;
+    backface-visibility: hidden;
+    padding: 1rem;
+    box-shadow: #000000 2px 2px 25px;
+}
+
+.reglement-back {
+    transform: rotateY(180deg);
+    background: linear-gradient(30deg, #1c157c, #0b0130);
+    color: #ffffff;
+    width: 90%;
+    border-radius: 50px;
+    box-shadow: #000000 2px 2px 25px;
+    text-align: center;
+}
+
+.regl-button {
+    font-size: 1.5rem;
+    color: #000000;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: #bbff00 2px 2px 25px;
+    background: linear-gradient(30deg, #e9ff24, #8ea120);
+}
+
+.regl-button:hover {
+    background: linear-gradient(30deg, #fffc29, #b7b421);
+    box-shadow: #fffc29 2px 2px 25px;
+    animation: pulsate 0.8s ease-in-out infinite;
+}
+
+.regl-text {
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}

@@ -9,10 +9,23 @@
   width: 100%;
   background: no-repeat url('../image/Fortnite1.webp');
   background-size: cover;
-  background-position: center;
+  background-attachment: fixed;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  width: 100%;
+  background-size: content;
+  background-position: center;
+  min-height: 110vh;
+  filter: blur(8px);
+  z-index: 0;
 }
 
 .container-blur {
@@ -145,13 +158,6 @@ body {
   100% {
     transform: translate(-50%, -50%) translateY(0);
   }
-}
-
-.kevin {
-  position: fixed;
-  scale: 1;
-  z-index: 1000;
-  animation: float 3s ease-in-out infinite;
 }
 
 .Regl {
