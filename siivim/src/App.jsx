@@ -17,19 +17,23 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
+  const handleInscrireClick = () => {
+    setPage('infos');
+  };
+
   const renderPage = () => {
     switch (page) {
       case 'home':
         return (
           <div className="container-blur">
             <Header setPage={setPage} />
-            <Home />
+            <Home onInscrireClick={handleInscrireClick} />
           </div>
         );
         
       case 'infos':
         return (
-          <div className='container-blur'>
+          <div className='container-blur-info'>
             <Header setPage={setPage} />
             <Info />
           </div>

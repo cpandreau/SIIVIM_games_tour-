@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 
-const Home = () => {
+const Home = ({ onInscrireClick }) => {
   return (
     <main>
       <div className="register-container">
@@ -14,7 +14,7 @@ const Home = () => {
         <div className="npc">
           <p>NE PAS COMBLER</p>
         </div>
-        <a className="register">S'INSCRIRE</a>
+        <a className="register" onClick={onInscrireClick}>S'INSCRIRE</a>
       </div>
       <div className="bottom-bar">
         <p>E-GAME SIIViM TOUR</p>

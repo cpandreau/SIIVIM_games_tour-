@@ -4,6 +4,8 @@ import "./Info.css";
 const Info = () => {
     const [eligibilityFlipped, setEligibilityFlipped] = useState(false);
     const [reglementFlipped, setReglementFlipped] = useState(false);
+    const [eligibilityChecked, setEligibilityChecked] = useState(false);
+    const [reglementChecked, setReglementChecked] = useState(false);
 
     const handleEligibilityFlip = () => {
         setEligibilityFlipped(!eligibilityFlipped);
@@ -11,6 +13,14 @@ const Info = () => {
 
     const handleReglementFlip = () => {
         setReglementFlipped(!reglementFlipped);
+    };
+
+    const handleEligibilityCheck = () => {
+        setEligibilityChecked(!eligibilityChecked);
+    };
+
+    const handleReglementCheck = () => {
+        setReglementChecked(!reglementChecked);
     };
 
     return (
@@ -33,6 +43,10 @@ const Info = () => {
                             <p className="eli-text">Les joueurs doivent avoir un compte Epic Games et Fortnite valide.</p>
                             <p className="eli-text">Les joueurs doivent être âgés d'au moins 15 ans à la date du 6 janvier 2025.</p>
                             <p className="eli-text">Les joueurs de 15 à 17 ans <u>doivent fournir une autorisation parentale lors de l'inscription.</u></p>
+                            <label>
+                                <input className="check" type="checkbox" checked={eligibilityChecked} onChange={handleEligibilityCheck} />
+                                Je réponds à toutes les conditions d'éligibilité.
+                            </label>
                             <button className="eli-button" onClick={handleEligibilityFlip}>Retour</button>
                         </div>
                     </div>
@@ -48,6 +62,10 @@ const Info = () => {
                             <p className="regl-text">Tous les participants doivent <u>respecter l'esprit de fair-play et les règles du jeu.</u></p>
                             <p className="regl-text">Les participants doivent être disponibles pour les phases en ligne.</p>
                             <p className="regl-text">Les décisions de l'arbitrage pendant le tournoi sont <u>finales et sans appel.</u></p>
+                            <label>
+                                <input className="check" type="checkbox" checked={reglementChecked} onChange={handleReglementCheck} />
+                                J'ai bien lu. J'approuve l'ensemble du règlement.
+                            </label>
                             <button className="regl-button" onClick={handleReglementFlip}>Retour</button>
                         </div>
                     </div>
