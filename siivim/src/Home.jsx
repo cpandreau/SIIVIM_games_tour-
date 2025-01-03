@@ -29,6 +29,9 @@ const Home = ({ onInscrireClick }) => {
         <div className="og-map">
           <img src="../image/OG.webp" alt="Map" />
         </div>
+        <div className="twitch-stream">
+          <iframe className="twitch" src="https://player.twitch.tv/?channel=villedenevers&parent=www.egames-siivim.fr" height="480" width="720" allowFullScreen></iframe>
+        </div>
       <div className="quest-container">
         <div className="quest-fun">
           <p>S'amuser</p>
