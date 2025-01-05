@@ -4,8 +4,10 @@ import "./Info.css";
 const Info = () => {
     const [eligibilityFlipped, setEligibilityFlipped] = useState(false);
     const [reglementFlipped, setReglementFlipped] = useState(false);
+    const [datesFlipped, setDatesFlipped] = useState(false);
     const [eligibilityChecked, setEligibilityChecked] = useState(false);
     const [reglementChecked, setReglementChecked] = useState(false);
+    const [datesChecked, setDatesChecked] = useState(false);
 
     const handleEligibilityFlip = () => {
         setEligibilityFlipped(!eligibilityFlipped);
@@ -15,6 +17,10 @@ const Info = () => {
         setReglementFlipped(!reglementFlipped);
     };
 
+    const handleDatesFlip = () => {
+        setDatesFlipped(!datesFlipped);
+    };
+
     const handleEligibilityCheck = () => {
         setEligibilityChecked(!eligibilityChecked);
     };
@@ -22,6 +28,12 @@ const Info = () => {
     const handleReglementCheck = () => {
         setReglementChecked(!reglementChecked);
     };
+
+    const handleDatesCheck = () => {
+        setDatesChecked(!datesChecked);
+    };
+
+    const allChecked = eligibilityChecked && reglementChecked && datesChecked;
 
     return (
         <main>
@@ -70,7 +82,32 @@ const Info = () => {
                         </div>
                     </div>
                 </div>
+                <div className={`dates ${datesFlipped ? 'flipped' : ''}`}>
+                    <div className="dates-inner">
+                        <div className="dates-front">
+                            <p className="dates">Jetons un oeil au calendrier des évènements !</p>
+                            <button className="dates-button" onClick={handleDatesFlip}>Calendrier des évènements</button>
+                        </div>
+                        <div className="dates-back">
+                            <p className="dates-text">Avant tout, les inscriptions doivent être complètes et conformes aux exigences avant la date limite fixée par l'organisation.</p>
+                            <p className="dates-text">Les participants doivent s'assurer de la stabilité de leur connexion internet pour les phases en ligne</p>
+                            <p className="dates-text">Le premier jour du tournoi sera le Samedi 8 Février 2025 et déterminera les 50 premiers finalistes du tournoi.</p>
+                            <p className="dates-text">Le deuxième et dernier jour du tournoi sera le Dimanche 9 Février 2025. Les 50 derniers finalistes s'y qualifieront.</p>
+                            <label>
+                                <input className="check" type="checkbox" checked={datesChecked} onChange={handleDatesCheck} />
+                                J'ai bien pris connaissance des dates importantes.
+                            </label>
+                            <button className="dates-button" onClick={handleDatesFlip}>Retour</button>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <button 
+                className={`register-button ${allChecked ? 'enabled' : 'disabled'}`} 
+                disabled={!allChecked}
+            >
+                S'inscrire
+            </button>
         </main>
     );
 }

@@ -4,6 +4,7 @@ import logo from '../image/logov1.png';
 import Header from './Header';
 import Home from './Home';
 import Info from './Info';
+import Leaderboard from './Leaderboard';
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(true);
@@ -43,6 +44,7 @@ function App() {
         return (
           <div className="container-blur">
             <Header setPage={setPage} />
+            <Leaderboard />
           </div>
         );
       default:

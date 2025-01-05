@@ -17,7 +17,8 @@ const Home = ({ onInscrireClick }) => {
         <a className="register" onClick={onInscrireClick}>S'INSCRIRE</a>
       </div>
       <div className="bottom-bar">
-        <p>E-GAME SIIViM TOUR</p>
+        <p>E-GAME SIIViM TOUR by EPITECH and SYNAPTIC-HUB</p>
+        {/* <img src={{}} */}
       </div>
       <div className="info-container">
         <div className="og-season">
@@ -30,7 +31,7 @@ const Home = ({ onInscrireClick }) => {
           <img src="../image/OG.webp" alt="Map" />
         </div>
         <div className="twitch-stream">
-          <iframe className="twitch" src="https://player.twitch.tv/?channel=villedenevers&parent=www.egames-siivim.fr" height="480" width="720" allowFullScreen></iframe>
+          <iframe className="twitch" src="https://player.twitch.tv/?channel=villedenevers&parent=localhost" height="480" width="720" allowFullScreen></iframe>
         </div>
       <div className="quest-container">
         <div className="quest-fun">

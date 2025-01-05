@@ -1,0 +1,13 @@
+.leaderboard {
+  width: 45%;
+  padding: 1rem 0rem;
+  border-radius: 50px;
+  background: linear-gradient(30deg, #1c157c, #0b0130);
+  box-shadow: #0b0130 2px 2px 25px;
+}
+
+.temp {
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
