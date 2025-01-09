@@ -1,5 +1,5 @@
 import React from "react";
-import "./Leaderboard.css"; // Corrected import path
+import "./Leaderboard.css";
 
 const Leaderboard = () => {
     return (

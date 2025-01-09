@@ -8,7 +8,7 @@
     100% {
       transform: scale(1);
     }
-  }
+}
 
 header {
     width: 100%;
@@ -42,8 +42,35 @@ header nav a {
 
 header nav a:hover {
     color: #333;
-    animation: pulsate 0.8s ease-in-out infinite;  background-color: #fffc29;
+    animation: pulsate 0.8s ease-in-out infinite;
+    background-color: #fffc29;
     border-color: #b7b421;
     transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
     box-shadow: #fffc29 0px 0px 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    header nav {
+        width: 150%;
+        flex-direction: row;
+        margin-bottom: 5rem;
+    }
+
+    header nav a {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    header nav a {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    header nav {
+        width: 150%;
+        flex-direction: column;
+        margin-bottom: 3rem;
+    }
 }

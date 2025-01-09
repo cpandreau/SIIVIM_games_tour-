@@ -11,3 +11,39 @@
     text-align: center;
     color: rgb(255, 255, 255);
 }
+
+@media (max-width: 768px) {
+    .leaderboard {
+        width: 90%;
+    }
+    .temp {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .leaderboard {
+        width: 100%;
+    }
+    .temp {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .leaderboard {
+        width: 100%;
+    }
+    .temp {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 430px) {
+    .leaderboard {
+        width: 100%;
+    }
+    .temp {
+        font-size: 1.8rem;
+    }
+}

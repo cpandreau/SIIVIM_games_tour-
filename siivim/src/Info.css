@@ -26,6 +26,7 @@
     border-radius: 20px;
     box-shadow: #16015f 2px 2px 15px;
     background: linear-gradient(30deg, #3224fd, #16015f);
+    line-height: 1.2; /* Reduce line spacing */
 }
 
 .pres {
@@ -37,6 +38,7 @@
     border-radius: 20px;
     box-shadow: #16015f 2px 2px 15px;
     background: linear-gradient(30deg, #3224fd, #16015f);
+    line-height: 1.2; /* Reduce line spacing */
 }
 
 .kevin {
@@ -44,26 +46,13 @@
     scale: 1;
     z-index: 100000;
     animation: float 3s ease-in-out infinite;
-    top: 15%;
+    top: 40%;
     right: 12%;
 }
 
-/* .rules {
-    font-size: 1.5rem;
-    color: #ffffff;
-    text-align: center;
-    display: flex;
-    width: 60%;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 2rem;
-    border-radius: 20px;
-    box-shadow: #1a085c 2px 2px 25px;
-    background: linear-gradient(30deg, #1c157c, #0b0130);
-} */
-
 .eligibility {
     perspective: 1000px;
+    line-height: 0.9;
 }
 
 .eligibility-inner, .reglement-inner {
@@ -107,6 +96,7 @@
     border-radius: 15px;
     box-shadow: #bbff00 2px 2px 15px;
     background: linear-gradient(30deg, #e9ff24, #8ea120);
+    margin-bottom: 8px;
 }
 
 .eli-button:hover {
@@ -122,6 +112,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    line-height: 0.9;
 }
 
 .reglement-inner {
@@ -242,6 +233,9 @@ label {
 
 .dates {
     perspective: 1000px;
+    line-height: 0.9;
+    z-index: 100; /* Ensure it is above other elements */
+    margin-bottom: 2rem; /* Add space below the dates card */
 }
 
 .dates-inner {
@@ -285,10 +279,134 @@ label {
     border-radius: 15px;
     box-shadow: #bbff00 2px 2px 15px;
     background: linear-gradient(30deg, #e9ff24, #8ea120);
+    margin-bottom: 8px;
 }
 
 .dates-button:hover {
     background: linear-gradient(30deg, #fffc29, #b7b421);
     box-shadow: #fffc29 2px 2px 25px;
     animation: pulsate 0.8s ease-in-out infinite;
+}
+
+.download-reglement {
+    font-size: 1.5rem;
+    color: #655aff;
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
+}
+
+.credit {
+    font-size: 0.8rem;
+    text-align: right;
+    margin-left: 85%;
+}
+
+@media (max-width: 768px) {
+    .info {
+        right: 0;
+        width: 100%;
+    }
+
+    .inst, .pres {
+        font-size: 1.5rem;
+        padding: 1rem;
+        width: 90%;
+    }
+
+    .register-button {
+        font-size: 2rem;
+        width: 80%;
+    }
+
+    .credit {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .inst, .pres {
+        font-size: 1.2rem;
+        padding: 0.8rem;
+        width: 100%;
+    }
+
+    .register-button {
+        font-size: 1.5rem;
+        width: 90%;
+    }
+
+    .credit {
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .info {
+        right: 0;
+        width: 100%;
+    }
+
+    .inst, .pres {
+        font-size: 1rem;
+        padding: 0.5rem;
+        width: 100%;
+    }
+
+    .register-button {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .credit {
+        font-size: 0.4rem;
+    }
+}
+
+@media (max-width: 430px) {
+    .info {
+        right: 0;
+        width: 100%;
+    }
+
+    .inst, .pres {
+        font-size: 1.3rem;
+        padding: 0.7rem;
+        width: 100%;
+    }
+
+    .register-button {
+        font-size: 1.3rem;
+        width: 100%;
+    }
+
+    .credit {
+        font-size: 0.5rem;
+    }
+}
+
+.discord img {
+    width: 20%;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin-left: 315px;
+    border-radius: 15px;
+    box-shadow: #1b0277 2px 2px 25px;
+    border-radius: 100px;
+    margin-bottom: 1rem;
+}
+
+.discord {
+    display: flex;
+    font-size: 1.4rem;
+    flex-direction: column;
+    align-items: center;
+    top: 2rem; 
+    width: 102%;
+    margin-bottom: 25px;
+    box-shadow: #000000 2px 2px 25px;
+    border: 3px solid transparent;
+    border-radius: 50px;
+    background: linear-gradient(#121125, #121125) padding-box,
+                linear-gradient(45deg, red, blue) border-box;
 }

@@ -3,17 +3,24 @@
   src: url('./assets/Fortnite/fortnite/fortnite.otf') format('truetype');
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 #root {
   display: flex;
   flex-direction: column;
   width: 100%;
   background: no-repeat url('../image/Fortnite1.webp');
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; /* Ensure background is fixed */
   background-repeat: repeat-y;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  height: 100%;
 }
 
 .background {
@@ -29,19 +36,19 @@
   z-index: 0;
 }
 
-
 .container-blur-info {
   backdrop-filter: blur(8px);
   width: 100%;
-  height: 100%;
+  min-height: 100vh; /* Ensure it covers the full height */
   display: flex;
   flex-direction: column;
+  overflow: auto; /* Allow scrolling */
 }
 
 .container-blur {
   backdrop-filter: blur(8px);
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -107,7 +114,7 @@ body {
 .INSTRUCTIONS {
   position: relative;
   font-family: 'Fortnite_font', sans-serif;
-  font-size: 4rem;
+  font-size: 4vw;
   color: #ffffff;
   text-shadow: 0 0 0.5rem #fffc29;
   z-index: 3;
@@ -152,7 +159,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Fortnite_font", sans-serif;
-  font-size: 45px;
+  font-size: 4.5vw;
   border: 1px solid darkblue;
   border-radius: 25px;
   box-shadow: 0 0 10px rgba(3, 2, 73, 0.5);
@@ -175,4 +182,60 @@ body {
   scale: 2;
   z-index: 1000;
   font-family: "Fortnite_font", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .case {
+    width: 90%;
+    height: 50%;
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 768px) {
+  #root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(120deg, #0059ff, #06002b); /* Dégradé de couleur */
+    background-size: cover;
+    background-attachment: fixed; /* Ensure background is fixed */
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 430px) {
+  #root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(120deg, #0059ff, #06002b); /* Dégradé de couleur */
+    background-size: cover;
+    background-attachment: fixed; /* Ensure background is fixed */
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    height: 100%;
+  }
+}
+
+@media (max-width: 430px) {
+  #root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(120deg, #0059ff, #06002b); /* Dégradé de couleur */
+    background-size: cover;
+    background-attachment: fixed; /* Ensure background is fixed */
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    height: 100%;
+  }
 }

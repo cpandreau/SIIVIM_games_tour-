@@ -36,7 +36,7 @@ function App() {
         return (
           <div className='container-blur-info'>
             <Header setPage={setPage} />
-            <Info />
+            <Info onInscrireClick={handleInscrireClick} /> {/* Pass handleInscrireClick */}
           </div>
         );
 

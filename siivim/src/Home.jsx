@@ -18,7 +18,8 @@ const Home = ({ onInscrireClick }) => {
       </div>
       <div className="bottom-bar">
         <p>E-GAME SIIViM TOUR by EPITECH and SYNAPTIC-HUB</p>
-        {/* <img src={{}} */}
+        <img src='./image/synaptic2.png'></img>
+        <p className="disclamer"><u>/!\</u> LA VILLE DE NEVERS N'EST PAS EN COLLABORATION AVEC FORTNITE ! <u>/!\</u></p>
       </div>
       <div className="info-container">
         <div className="og-season">
