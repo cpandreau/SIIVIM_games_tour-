@@ -5,6 +5,7 @@ import Header from './Header';
 import Home from './Home';
 import Info from './Info';
 import Leaderboard from './Leaderboard';
+import Footer from './Footer';
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(true);
@@ -29,6 +30,7 @@ function App() {
           <div className="container-blur">
             <Header setPage={setPage} />
             <Home onInscrireClick={handleInscrireClick} />
+            {/* <Footer /> */}
           </div>
         );
         

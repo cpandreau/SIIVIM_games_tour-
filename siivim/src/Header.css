@@ -10,6 +10,17 @@
     }
 }
 
+@keyframes fall {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 header {
     width: 100%;
     display: flex;
@@ -17,21 +28,58 @@ header {
     align-items: center;
     padding: 1.5rem 0;
     flex-direction: row;
+    position: relative;
+}
+
+header img {
+    width: 15%;
+    height: auto;
+    margin-left: 2rem;
+    position: absolute;
+    left: 0;
+    bottom: -120%;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 65%;
+    width: 60%;
     padding: 0.8rem 2rem;
     background: linear-gradient(30deg, #3224fd, #1f008f);
     border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    position: relative;
+    top: 2rem;
+}
+
+.falling-logo, .epitech {
+    position: absolute;
+    top: -3.5rem;
+    margin: 0rem -2.5rem;
+    opacity: 1;
+    z-index: 2;
+    animation: fall 1s ease-in-out forwards;
+}
+
+.falling-logo {
+    width: 50px;
+    height: 50px;
+}
+
+.epitech {
+    color: #ffffff;
+    margin: 0.2rem -5rem;
+    width: 125px;
+    height: 50px;
+    font-family: 'Fortnite_font', sans-serif; /* Ensure you have the correct font family here */
 }
 
 header nav a {
     color: #ffffff;
-    font-size: 1.2rem;
+    font-size: 1rem; /* Decreased from 1.2rem */
     transition: color 0.2s ease-in-out;
     background-color: #62c5ff;
     border-color: #2d93cf;
@@ -58,14 +106,14 @@ header nav a:hover {
 
     header nav a {
         padding: 0.5rem 1rem;
-        font-size: 1rem;
+        font-size: 0rem; /* Decreased from 1rem */
     }
 }
 
 @media screen and (max-width: 375px) {
     header nav a {
         padding: 0.4rem 0.8rem;
-        font-size: 0.9rem;
+        font-size: -0.1rem; /* Decreased from 0.9rem */
     }
 
     header nav {

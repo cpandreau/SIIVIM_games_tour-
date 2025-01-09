@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Fortnite_font';
-  src: url('./assets/Fortnite/fortnite/fortnite.otf') format('truetype');
+  src: url('./assets/Fortnite/fortnite/KOMIKAX_.ttf') format('truetype');
 }
 
 html, body {
@@ -15,7 +15,7 @@ html, body {
   width: 100%;
   background: no-repeat url('../image/Fortnite1.webp');
   background-size: cover;
-  background-attachment: fixed; /* Ensure background is fixed */
+  background-attachment: fixed;
   background-repeat: repeat-y;
   justify-content: center;
   align-items: center;
@@ -31,7 +31,7 @@ html, body {
   width: 100%;
   background-size: content;
   background-position: center;
-  min-height: 110vh;
+  min-height: 100vh;
   filter: blur(8px);
   z-index: 0;
 }
@@ -114,7 +114,7 @@ body {
 .INSTRUCTIONS {
   position: relative;
   font-family: 'Fortnite_font', sans-serif;
-  font-size: 4vw;
+  font-size: 3vw; /* Decreased from 4vw */
   color: #ffffff;
   text-shadow: 0 0 0.5rem #fffc29;
   z-index: 3;
@@ -159,7 +159,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Fortnite_font", sans-serif;
-  font-size: 4.5vw;
+  font-size: 3.5vw; /* Decreased from 4.5vw */
   border: 1px solid darkblue;
   border-radius: 25px;
   box-shadow: 0 0 10px rgba(3, 2, 73, 0.5);
@@ -188,7 +188,7 @@ body {
   .case {
     width: 90%;
     height: 50%;
-    font-size: 2.5vw;
+    font-size: 1.5vw; /* Decreased from 2.5vw */
   }
 }
 

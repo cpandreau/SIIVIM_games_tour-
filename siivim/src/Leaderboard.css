@@ -1,5 +1,6 @@
 .leaderboard {
   width: 45%;
+  margin: 3rem auto;
   padding: 1rem 0rem;
   border-radius: 50px;
   background: linear-gradient(30deg, #1c157c, #0b0130);
@@ -7,6 +8,7 @@
 }
 
 .temp {
+    margin: 1rem auto;
     font-size: 3rem;
     text-align: center;
     color: rgb(255, 255, 255);

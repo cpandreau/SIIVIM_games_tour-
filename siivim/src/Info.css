@@ -51,8 +51,14 @@
 }
 
 .eligibility {
+    width: 75%;
     perspective: 1000px;
     line-height: 0.9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .eligibility-inner, .reglement-inner {
@@ -106,13 +112,14 @@
 }
 
 .reglement {
-    font-size: 1.5rem;
-    color: #ffffff;
-    text-align: center;
+    width: 75%;
+    perspective: 1000px;
+    line-height: 0.9;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    line-height: 0.9;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .reglement-inner {
@@ -232,10 +239,15 @@ label {
 }
 
 .dates {
+    width: 75%;
     perspective: 1000px;
     line-height: 0.9;
-    z-index: 100; /* Ensure it is above other elements */
-    margin-bottom: 2rem; /* Add space below the dates card */
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .dates-inner {
@@ -385,25 +397,21 @@ label {
 }
 
 .discord img {
-    width: 20%;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    margin-left: 315px;
-    border-radius: 15px;
-    box-shadow: #1b0277 2px 2px 25px;
-    border-radius: 100px;
+    width: 20%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the image horizontally */
+    border-radius: 150px;
+    box-shadow: #1b0277 2px 2px 5px;
     margin-bottom: 1rem;
+    display: block; /* Ensure the image is displayed as a block element */
 }
 
 .discord {
     display: flex;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     flex-direction: column;
     align-items: center;
-    top: 2rem; 
-    width: 102%;
-    margin-bottom: 25px;
+    width: 76.5%; /* Adjust width as needed */
+    margin: 0 auto 25px auto; /* Center the div horizontally */
     box-shadow: #000000 2px 2px 25px;
     border: 3px solid transparent;
     border-radius: 50px;

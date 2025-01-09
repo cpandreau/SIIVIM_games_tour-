@@ -4,12 +4,16 @@
     align-items: center;
     position: relative;
     left: 38%;
-    top: 60%;
+    top: 65%;
     width: 20%;
     border-radius: 15px;
     background: linear-gradient(120deg, #0059ff, #06002b);
     padding: 0.8rem 0;
     box-shadow: #091327 2px 2px 15px;
+}
+
+html, body {
+    height: 100%; /* Ensure the height is 100% */
 }
 
 main {
@@ -41,7 +45,7 @@ main {
 }
 
 .npc {
-    font-size: 1.3rem;
+    font-size: 1.3rem; /* Decreased from 1.3rem */
     border-radius: 8px;
     padding: 0.3rem 4.5rem;
     border-width: 0.2rem;
@@ -50,12 +54,12 @@ main {
 }
 
 .duo {
-    font-size: 4.5rem;
-    line-height: 1.1;
+    font-size: 3.3rem; /* Decreased from 4.5rem */
+    margin-bottom: 1rem;
 }
 
 .register{
-    font-size: 3rem;
+    font-size: 2.5rem; /* Decreased from 3rem */
     color: #ffffff;
     text-decoration: none;
     width: 80%;
@@ -67,7 +71,7 @@ main {
 }
 
 .game-mode {
-    font-size: 1.2rem;
+    font-size: 1.2rem; /* Decreased from 1.2rem */
     color: #b3b3b3;
 }
 
@@ -81,29 +85,33 @@ main {
 
 .bottom-bar {
     position: fixed;
-    bottom: 0%;
-    width: 100%;
+    top: 70.6%; /* Ensure the bottom-bar is at the bottom */
+    width: 98%; /* Ensure the bottom-bar spans the full width */
     height: 2rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; /* Center the text horizontally */
+    padding: 0 1rem; /* Add padding to the sides */
     flex-direction: row;
     z-index: -1;
     background: linear-gradient(120deg, #0059ff, #06002b);
     border-radius: 0 0 15px 15px;
+    position: relative; /* Add relative positioning */
 }
 
 .bottom-bar p {
-    font-size: 0.8rem;
+    font-size: 0.8rem; /* Decreased from 0.8rem */
     color: #ffffff65;
     text-align: center;
     line-height: 1.2;
+    margin: 0 1rem; /* Add margin to center the text and image */
 }
 
 .bottom-bar img {
-    scale:calc(0.2);
+    scale: calc(0.2);
     background: linear-gradient(30deg, #00098a, #0059ff);
     box-shadow: rgb(153, 153, 153) 2px 2px 20px;
+    margin: 0 1rem; /* Add margin to center the text and image */
 }
 
 .register:active {
@@ -161,7 +169,7 @@ main {
 }
 
 .date p {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 0;
     padding: 0.2rem;
 }
@@ -182,10 +190,12 @@ main {
     border-radius: 15px;
     background-color: #2f2f3ab7;
     box-shadow: #091327 2px 2px 15px;
+    padding: 0.8rem 0;
 }
 
 .quest-fun {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    margin-bottom: 2px; /* Decreased from 1.5rem */
     border-radius: 8px;
     border-width: 0.2rem;
     color: #c4c4c4;
@@ -196,7 +206,7 @@ main {
     padding: 0.5rem 0.5rem;
     margin-block-start: 0;
     margin-block-end: 0;
-    line-height: 1.2; /* Reduce line spacing */
+    line-height: 1.8; /* Reduce line spacing */
 }
 
 .quest-bar-fun {
@@ -232,12 +242,12 @@ main {
 }
 
 .quest-win p {
-    font-size: 1.5rem;
+    font-size: 1.3rem; /* Decreased from 1.5rem */
     margin: 0;
     padding: 0.5rem 0.5rem;
     margin-block-start: 0;
     margin-block-end: 0;
-    line-height: 1.2; /* Reduce line spacing */
+    line-height: 1.8; /* Reduce line spacing */
 }
 
 .quest-bar-win {
@@ -280,7 +290,16 @@ main {
 }
 
 .disclamer {
-    font-size: 2rem;
+    font-size: 1rem; /* Decreased from 2rem */
+}
+
+.footer-text {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.8rem; /* Decreased from 0.8rem */
+    color: #ffffff65;
 }
 
 @media (max-width: 768px) {
@@ -390,3 +409,30 @@ main {
     }
 }
 
+.logos {
+    display: flex;
+    justify-content: flex-end; /* Keep logos at the right */
+    position: absolute; /* Position logos absolutely */
+    right: 1rem; /* Align logos to the right */
+    bottom: -4.5rem; /* Adjust vertical position */
+}
+
+.logos img {
+    width: 10rem; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: -8rem; /* Add space between logos */
+    background: none; /* Remove background */
+    box-shadow: none;
+}
+
+.invitation {
+    font-size: 1.2rem; /* Decreased from 1.5rem */
+    color: #ffffff;
+    text-decoration: none;
+    width: 80%;
+    text-align: center;
+    padding: 0.3rem 0.5rem;
+    border: 2px solid transparent;
+    background: linear-gradient(120deg, #e4e71c, #c2d41c) padding-box, linear-gradient(120deg, rgb(139, 125, 125), rgb(42, 43, 32)) border-box;
+    border-radius: 8px;
+}
