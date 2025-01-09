@@ -1,0 +1,48 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #0059ff;
+  color: #fff;
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  background: linear-gradient(120deg, #0059ff, #06002b);
+  border-radius: 0 0 15px 15px;
+}
+
+.footer-left, .footer-center, .footer-right {
+  flex: 1 1 100%;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.footer-icon[alt="TikTok"], .footer-icon[alt="Instagram"], .footer-icon[alt="Discord"] {
+  width: 5%;
+  height: auto;
+}
+
+@media (min-width: 600px) {
+  .footer-left, .footer-center, .footer-right {
+    flex: 1;
+    text-align: initial;
+    margin: 0;
+  }
+
+  .footer-left {
+    text-align: left;
+  }
+
+  .footer-center {
+    text-align: center;
+  }
+
+  .footer-right {
+    text-align: right;
+  }
+}
+
