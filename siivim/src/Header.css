@@ -37,7 +37,7 @@ header img {
     margin-left: 2rem;
     position: absolute;
     left: 0;
-    bottom: -120%;
+    bottom: -90%;
 }
 
 nav {
@@ -102,6 +102,14 @@ header nav a:hover {
 @media screen and (max-width: 1000px) {
     header nav {
         width: 80%;
+    }
+
+    header img {
+        width: 10%;
+        bottom: 75%;
+        left: -3%;
+        position: fixed;
+        z-index: 2;
     }
 }
 
