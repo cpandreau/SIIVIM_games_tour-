@@ -45,7 +45,7 @@ const Info = ({ onInscrireClick }) => {
             <div className="info">
                 <p className="inst"><u>Informations & Instructions</u></p>
                 <p className='pres'>
-                    Organisé par la ville de <u>Nevers</u>, ce tournoi se déroule du <u>8 Février 2025</u> au <u>9 Février 2025</u> sur Fortnite.
+                    Organisé par la ville de Nevers, ce tournoi se déroule du 8 Février 2025 au 9 Février 2025 sur Fortnite.
                     <br />
                     <a href="../ppt/reglement.pdf" download="Reglement_Tournoi.pdf" className="download-reglement">
                        <u>Télécharger le règlement</u>
