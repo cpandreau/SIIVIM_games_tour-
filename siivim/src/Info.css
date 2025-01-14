@@ -14,12 +14,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: sticky;
-    right: 35%;
+    position: relative;
+    right: 0%;
+    top: 2%;
 }
 
 .inst {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #d0ecff;
     text-align: center;
     padding: 2rem;
@@ -30,7 +31,7 @@
 }
 
 .pres {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     color: #d0ecff;
     text-align: center;
     padding: 2rem;
@@ -47,9 +48,17 @@
     z-index: 100000;
     animation: float 3s ease-in-out infinite;
     top: 40%;
-    right: 12%;
+    right: 8%;
 }
 
+.eligibility p {
+    font-size: 1rem;
+    color: #ffffff;
+    line-height: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
 .eligibility {
     width: 75%;
     perspective: 1000px;
@@ -58,7 +67,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
+    margin: 5rem auto;
 }
 
 .eligibility-inner, .reglement-inner {
@@ -96,7 +105,7 @@
 }
 
 .eli-button {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #000000;
     text-align: center;
     border-radius: 15px;
@@ -109,6 +118,15 @@
     background: linear-gradient(30deg, #fffc29, #b7b421);
     box-shadow: #fffc29 2px 2px 25px;
     animation: pulsate 0.8s ease-in-out infinite;
+}
+
+.reglement p {
+    font-size: 1rem;
+    color: #ffffff;
+    line-height: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .reglement {
@@ -155,7 +173,7 @@
 }
 
 .regl-button {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #000000;
     text-align: center;
     border-radius: 15px;
@@ -178,18 +196,19 @@
 }
 
 .check {
-    font-size: 1.5rem;
+    margin: auto -2rem;
+    font-size: 1rem;
     text-align: center;
     display: flex;
     flex-direction: column;
     width: 86%;
-    margin-bottom: -1.4rem;
+    margin-bottom: -0.8rem;
 }
 
 label {
     padding-top: 1.5rem;
     padding-left: 1rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #c7c7c7;
     text-align: left;
     display: flex;
@@ -236,6 +255,15 @@ label {
 
 .register-button.clicked {
     background: grey !important;
+}
+
+.dates p {
+    font-size: 1rem;
+    color: #ffffff;
+    line-height: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .dates {
@@ -285,7 +313,7 @@ label {
 }
 
 .dates-button {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #000000;
     text-align: center;
     border-radius: 15px;
@@ -407,6 +435,7 @@ label {
 
 .discord {
     display: flex;
+    text-align: center;
     font-size: 1.3rem;
     flex-direction: column;
     align-items: center;
