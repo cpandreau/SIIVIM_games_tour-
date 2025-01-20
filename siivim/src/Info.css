@@ -17,7 +17,6 @@
     position: relative;
     right: 0%;
     top: 2%;
-    height: 520px;
 }
 
 .inst {
@@ -44,12 +43,12 @@
 }
 
 .kevin {
-    position: relative;
+    position: fixed;
     scale: 1;
     z-index: 100000;
     animation: float 3s ease-in-out infinite;
-    top: -30%;
-    right: -100%;
+    top: 40%;
+    right: 8%;
 }
 
 .eligibility p {
@@ -203,15 +202,13 @@
     display: flex;
     flex-direction: column;
     width: 86%;
-    left: 15rem;
     margin-bottom: -0.8rem;
-    position: relative;
 }
 
 label {
     padding-top: 1.5rem;
     padding-left: 1rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: #c7c7c7;
     text-align: left;
     display: flex;
@@ -344,31 +341,10 @@ label {
     margin-left: 85%;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .info {
         right: 0;
         width: 100%;
-    }
-
-    .check {
-        margin: auto -2rem;
-        font-size: 1rem;
-        text-align: end;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 10%;
-        left: 30rem;
-        margin-bottom: -0.8rem;
-        position: relative;
-    }
-
-    .kevin {
-        display: none;
-    }
-
-    .pres u {
-        font-size: 1rem;
     }
 
     .inst, .pres {
@@ -384,38 +360,6 @@ label {
 
     .credit {
         font-size: 0.6rem;
-    }
-
-    .eli-button {
-        font-size: 0.9rem;
-        margin-top: 1rem;
-    }
-
-    .regl-button {
-        font-size: 0.9rem;
-        margin-top: 1rem;
-    }
-
-    .dates-button {
-        font-size: 0.9rem;
-        margin-top: 1rem;
-    }
-
-
-}
-
-@media screen and (max-width: 540px) {
-    .pres, .inst {
-        width: 60%;
-        font-size: 1.2rem;
-    }
-
-    .inst {
-        font-size: 1.2rem;
-    }
-
-    .discord p {
-        font-size: 1rem;
     }
 }
 
@@ -467,7 +411,7 @@ label {
     .inst, .pres {
         font-size: 1.3rem;
         padding: 0.7rem;
-        width: 80%;
+        width: 100%;
     }
 
     .register-button {
@@ -475,11 +419,8 @@ label {
         width: 100%;
     }
 
-    .credit u {
-        display: flex;
-        margin-right: 350px;
-        text-align: center;
-        font-size: 0.6rem;
+    .credit {
+        font-size: 0.5rem;
     }
 }
 
@@ -505,35 +446,4 @@ label {
     border-radius: 50px;
     background: linear-gradient(#121125, #121125) padding-box,
                 linear-gradient(45deg, red, blue) border-box;
-}
-
-@media screen and (max-width: 650px) {
-    .check {
-        margin: auto -2rem;
-        font-size: 1rem;
-        text-align: end;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 10%;
-        left: 25rem;
-        margin-bottom: -0.8rem;
-        position: relative;
-    }
-}
-
-@media screen and (max-width: 518px) {
-    .check {
-        margin: auto -2rem;
-        font-size: 1rem;
-        text-align: end;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 10%;
-        left: 15rem;
-        bottom: -1rem;
-        margin-bottom: -0.8rem;
-        position: relative;
-    }
 }
